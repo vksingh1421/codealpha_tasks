@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="captcha.css">
+</head>
+
+<body>
+    <h1 id="captchaHeading">Simple form with integrated captcha for Validation</h1>
+    <div class="form1">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name"><br><br>
+            <label for="sex">Sex:</label>
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="female" value="female">
+            <label for="female">Female</label> <br><br>
+            <label for="country">Country: </label>
+            <select name="country" id="country">
+                <option>Select an option</option>
+                <option value="JAPAN">JAPAN</option>
+                <option value="usa">USA</option>
+                <option value="australia">Australia</option>
+            </select><br><br>
+            <label for="message">Message:</label><br>
+            <textarea name="message" id="message" cols="30" rows="4"></textarea><br><br>
+            <input type="checkbox" name="newsletter" id="newsletter">
+            <label for="newsletter">Subscribe?</label><br><br>
+            
+        </form>
+    </div>
+    <div class="center">
+       
+        <div id="captchaBackground">
+            <canvas id="captcha">captcha text</canvas>
+            <input id="textBox" type="text" name="text">
+            <div id="buttons">
+                <input id="submitButton" type="submit">
+                <button id="refreshButton" type="submit">Refresh</button>
+            </div>
+            <span id="output"></span>
+        </div>
+    </div>
+    <script src="captcha.js"></script>
+    
+</body>
+
+</html>
